@@ -5,8 +5,8 @@
  * @version 0.0.1
  * @authorId 375379813403328523
  * @authorLink https://twitter.com/monoxideboi
- * @website https://github.com/Carbon-Monoxide/btMonoRemoval
- * @source https://gist.github.com/rauenzi/e5f4d02fc3085a53872b0236cd6f8225
+ * @website https://github.com/Carbon-Monoxide/bdMonoRemoval
+ * @source https://github.com/Carbon-Monoxide/bdMonoRemoval/blob/main/monoRemoval.plugin.js
  */
 
 module.exports = class MonoRemovalPlugin {
