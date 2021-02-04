@@ -12,15 +12,26 @@
 module.exports = class MonoRemovalPlugin {
   load() {} // Optional function. Called when the plugin is loaded in to memory
 
-  start() {
-  } // Required function. Called when the plugin is activated (including after reloads)
+  start() {} // Required function. Called when the plugin is activated (including after reloads)
   stop() {} // Required function. Called when the plugin is deactivated
 
   observer(changes) {
-    if (document.getElementById("user-context-invite-to-server")) {
-        console.log("invite to server button detected", document.getElementById("user-context-invite-to-server"));
-        let element = document.getElementById("user-context-invite-to-server");
-        element.remove();
+    // if (document.getElementById("user-context-invite-to-server")) {
+    //     console.log("invite to server button detected", document.getElementById("user-context-invite-to-server"));
+    //     let element = document.getElementById("user-context-invite-to-server");
+    //     element.remove();
+    // }
+    if (
+      document.getElementsByClassName(
+        "layerContainer-yqaFcK da-layerContainer"
+      )[0].innerHTML != ""
+    ) {
+      console.log(
+        "invite to server button detected",
+        document.getElementById("user-context-invite-to-server")
+      );
+      let element = document.getElementById("user-context-invite-to-server");
+      element.remove();
     }
   } // Optional function. Observer for the `document`. Better documentation than I can provide is found here: <https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver>
 };
