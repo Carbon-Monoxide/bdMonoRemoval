@@ -1,5 +1,6 @@
 let observer = new MutationObserver(callback);
-let target = document;
+let target = document.getElementsByClassName("layerContainer-yqaFcK")[1];
+console.log(document.getElementsByClassName("layerContainer-yqaFcK"));
 const config = {
     characterData: true,
     characterDataOldValue: true,
